@@ -21,57 +21,59 @@
   .wrap{max-width:680px; margin:0 auto; padding:0 16px;}
 
   .hero{background:linear-gradient(135deg,var(--navy),var(--bright)); color:#fff; padding:26px 20px 24px; text-align:center;}
-  .hero h1{font-size:23px; font-weight:800; letter-spacing:.5px;}
-  .hero .sub{font-size:14px; opacity:.92; margin-top:6px;}
-  .hero .note{font-size:13.5px; background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.3);
-    border-radius:10px; padding:10px 14px; margin-top:14px; line-height:1.6;}
+  .hero h1{font-size:29px; font-weight:800; letter-spacing:.5px;}
+  .hero .sub{font-size:16px; opacity:.92; margin-top:7px;}
+  .hero .note{font-size:17px; background:rgba(255,255,255,.16); border:1px solid rgba(255,255,255,.32);
+    border-radius:12px; padding:17px 19px; margin-top:16px; line-height:1.9; text-align:left;}
+  .hero .note .hi{font-size:18.5px; font-weight:800; display:block; margin-bottom:6px; color:#fff;}
+  .hero .note b{color:#fff;}
 
-  .briefing{display:flex; align-items:center; gap:12px; background:#fff; border:2px solid var(--bright);
-    border-radius:14px; padding:15px 18px; margin:18px 0; text-decoration:none; color:var(--navy);
+  .briefing{display:flex; align-items:center; gap:13px; background:#fff; border:2px solid var(--bright);
+    border-radius:14px; padding:17px 18px; margin:18px 0; text-decoration:none; color:var(--navy);
     box-shadow:0 4px 16px rgba(19,50,92,.10);}
-  .briefing .ic{font-size:30px;}
+  .briefing .ic{font-size:34px;}
   .briefing .tx{flex:1;}
-  .briefing .tx b{font-size:16.5px; display:block;}
-  .briefing .tx span{font-size:13px; color:var(--grey);}
-  .briefing .go{font-size:14px; font-weight:800; color:#fff; background:var(--bright); border-radius:20px; padding:7px 14px; white-space:nowrap;}
+  .briefing .tx b{font-size:19.5px; display:block;}
+  .briefing .tx span{font-size:14.5px; color:var(--grey);}
+  .briefing .go{font-size:15.5px; font-weight:800; color:#fff; background:var(--bright); border-radius:20px; padding:9px 15px; white-space:nowrap;}
 
   .sec{margin-top:24px;}
   .sec-h{display:flex; align-items:center; gap:9px; margin-bottom:12px;}
   .sec-h .bar{width:6px; height:22px; border-radius:3px;}
-  .sec-h h2{font-size:18px; color:var(--navy); font-weight:800;}
-  .sec-h .badge{font-size:12px; font-weight:800; border-radius:20px; padding:3px 11px; margin-left:auto;}
+  .sec-h h2{font-size:22px; color:var(--navy); font-weight:800;}
+  .sec-h .badge{font-size:13.5px; font-weight:800; border-radius:20px; padding:4px 12px; margin-left:auto;}
   .sec.fill .bar{background:var(--red);}   .sec.fill .badge{background:var(--red); color:#fff;}
   .sec.notice .bar{background:var(--amber);} .sec.ref .bar{background:var(--bright);}
-  .sec-tip{font-size:13px; color:var(--grey); background:#fff; border-left:4px solid var(--line);
-    border-radius:8px; padding:9px 13px; margin-bottom:12px;}
+  .sec-tip{font-size:15.5px; color:var(--grey); background:#fff; border-left:4px solid var(--line);
+    border-radius:8px; padding:11px 15px; margin-bottom:12px; line-height:1.7;}
   .sec.fill .sec-tip{border-left-color:var(--red); background:#fff6f5;}
 
-  .card{display:flex; align-items:center; gap:13px; background:#fff; border:1px solid var(--line);
-    border-radius:13px; padding:14px 16px; margin-bottom:11px; text-decoration:none; color:var(--ink);
+  .card{display:flex; align-items:center; gap:14px; background:#fff; border:1px solid var(--line);
+    border-radius:13px; padding:16px 17px; margin-bottom:12px; text-decoration:none; color:var(--ink);
     box-shadow:0 2px 10px rgba(19,50,92,.06);}
   .card:active{background:var(--blue-l);}
-  .card .ic{font-size:26px; width:30px; text-align:center; flex:none;}
+  .card .ic{font-size:30px; width:34px; text-align:center; flex:none;}
   .card .info{flex:1; min-width:0;}
-  .card .info .t{font-size:16px; font-weight:700; color:var(--navy); line-height:1.35;}
-  .card .info .d{font-size:12.5px; color:var(--grey); margin-top:2px;}
-  .card .dl{flex:none; font-size:13.5px; font-weight:800; color:#fff; background:var(--green);
-    border-radius:20px; padding:8px 14px; white-space:nowrap;}
-  .card .dl .sz{display:block; font-size:10.5px; font-weight:600; opacity:.9; text-align:center;}
+  .card .info .t{font-size:18.5px; font-weight:700; color:var(--navy); line-height:1.4;}
+  .card .info .d{font-size:14.5px; color:var(--grey); margin-top:3px;}
+  .card .dl{flex:none; font-size:15.5px; font-weight:800; color:#fff; background:var(--green);
+    border-radius:20px; padding:10px 15px; white-space:nowrap;}
+  .card .dl .sz{display:block; font-size:11.5px; font-weight:600; opacity:.9; text-align:center;}
 
   .contact{background:#fff; border:1px solid var(--line); border-radius:14px; padding:18px 18px;
     margin-top:24px; box-shadow:0 2px 10px rgba(19,50,92,.06);}
-  .contact h2{font-size:17px; color:var(--navy); margin-bottom:10px; display:flex; align-items:center; gap:8px;}
-  .contact .row{font-size:15px; padding:7px 0; border-bottom:1px dashed var(--line); display:flex; gap:10px;}
+  .contact h2{font-size:20px; color:var(--navy); margin-bottom:12px; display:flex; align-items:center; gap:8px;}
+  .contact .row{font-size:17.5px; padding:9px 0; border-bottom:1px dashed var(--line); display:flex; gap:10px;}
   .contact .row:last-child{border-bottom:none;}
-  .contact .row .k{color:var(--grey); width:80px; flex:none;}
+  .contact .row .k{color:var(--grey); width:92px; flex:none;}
   .contact .row .v{font-weight:700; color:var(--ink);}
   .contact .row .v a{color:var(--bright); text-decoration:none;}
-  .contact .qr{text-align:center; margin-top:14px; padding-top:14px; border-top:1px dashed var(--line);}
-  .contact .qr img{width:190px; height:190px; border:1px solid var(--line); border-radius:10px; padding:6px; background:#fff;}
-  .contact .qr .cap{font-size:13px; color:var(--grey); margin-top:8px;}
+  .contact .qr{text-align:center; margin-top:16px; padding-top:16px; border-top:1px dashed var(--line);}
+  .contact .qr img{width:210px; height:210px; border:1px solid var(--line); border-radius:10px; padding:6px; background:#fff;}
+  .contact .qr .cap{font-size:14.5px; color:var(--grey); margin-top:9px;}
   .contact .qr .cap b{color:var(--green);}
 
-  .foot{font-size:12px; color:var(--grey); text-align:center; margin-top:26px; line-height:1.8;}
+  .foot{font-size:13.5px; color:var(--grey); text-align:center; margin-top:26px; line-height:1.9;}
 </style>
 </head>
 <body>
@@ -79,7 +81,14 @@
   <div class="hero">
     <h1>信義364 住戶資料專區</h1>
     <div class="sub">大安區大安段一小段364地號等19筆土地都市更新案</div>
-    <div class="note">部分住戶反映掛號信尚未收到，特別提供<b>線上下載</b>。<br>以下資料與寄送的紙本相同，可直接下載、列印。</div>
+    <div class="note">
+      <span class="hi">親愛的地主，您好 🙏</span>
+      首先，由衷感謝大家一路以來的信任與支持。6/7 公聽會在各位的參與下圓滿完成，真的非常謝謝您。
+      <br><br>
+      考量部分住戶的<b>掛號信可能還在寄送途中、或一時不好找</b>，我們把所有資料都整理在這一頁，<b>方便您隨時上網查看、下載、列印</b>，不必擔心漏接任何文件。
+      <br><br>
+      若有任何不清楚的地方，<b>請別客氣</b>，隨時用最下方的電話或 LINE 與我們聯絡，我們很樂意為您一一說明。🌿
+    </div>
   </div>
 
   <div class="wrap">
@@ -143,7 +152,7 @@
 
     <!-- 窗口聯絡 -->
     <div class="contact">
-      <h2>📞 有問題請聯絡窗口</h2>
+      <h2>📞 有任何問題，隨時找我們</h2>
       <div class="row"><span class="k">承辦窗口</span><span class="v">寶舖建設　莊穎霖（Calvin）</span></div>
       <div class="row"><span class="k">電話</span><span class="v"><a href="tel:0963029408">0963-029-408</a></span></div>
       <div class="row"><span class="k">Email</span><span class="v"><a href="mailto:calvinchuang@baopu.com.tw">calvinchuang@baopu.com.tw</a></span></div>
@@ -155,6 +164,7 @@
     </div>
 
     <div class="foot">
+      謝謝您撥空閱讀，我們會陪著大家一起走完更新這條路，迎接更好的家 🏠<br><br>
       寶舖建設集團開發部 ｜ 信義364 都市更新案<br>
       本專區資料與紙本寄送版相同，實際權益以正式公告／核定之權利變換計畫為準。
     </div>
