@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>信義364 線上選屋執行計畫｜內部報告</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    font-family: "Microsoft JhengHei", "微軟正黑體", "PingFang TC", sans-serif;
+    color: #222; line-height: 1.65; margin: 0;
+    background: #f4f5f7; padding: 28px 18px;
+  }
+  .page { max-width: 960px; margin: 0 auto; background: #fff;
+    box-shadow: 0 2px 14px rgba(0,0,0,.08); border-radius: 6px; overflow: hidden; }
+
+  /* 標題列 */
+  .hd { background: #1F3864; color: #fff; padding: 26px 32px; }
+  .hd .proj { color: #FFFF80; font-weight: 800; }
+  .hd h1 { margin: 0 0 6px; font-size: 25px; font-weight: 800; letter-spacing: .5px; }
+  .hd .meta { font-size: 13px; color: #cdd6ea; }
+  .hd .meta b { color: #fff; }
+
+  .body { padding: 26px 32px 40px; }
+
+  h2 { font-size: 18px; color: #1F3864; font-weight: 800;
+    border-left: 6px solid #1F3864; padding-left: 11px; margin: 30px 0 12px; }
+
+  /* 戰情總覽 */
+  .war { display: grid; grid-template-columns: repeat(4, 1fr); gap: 12px; margin: 6px 0 4px; }
+  .war .card { background: #eef1f8; border: 1px solid #d4dbee; border-radius: 6px;
+    padding: 12px 14px; text-align: center; }
+  .war .num { font-size: 26px; font-weight: 800; color: #1F3864; line-height: 1.1; }
+  .war .lbl { font-size: 12.5px; color: #555; margin-top: 4px; }
+
+  .note { background: #fff8e1; border: 1px solid #f0d97a; border-radius: 6px;
+    padding: 13px 16px; font-size: 14px; margin: 14px 0; }
+  .note b { color: #8a6d00; }
+
+  /* 階段標頭 */
+  .phase { background: #2E4F8F; color: #fff; font-weight: 800; font-size: 15px;
+    padding: 9px 14px; border-radius: 5px 5px 0 0; margin-top: 22px; }
+  .phase .when { float: right; font-weight: 600; font-size: 13px; color: #cdd6ea; }
+
+  /* 追蹤管理表 */
+  table { width: 100%; border-collapse: collapse; font-size: 13.5px; }
+  thead th { background: #1F3864; color: #fff; font-weight: 700;
+    padding: 9px 8px; text-align: left; border: 1px solid #16294a; }
+  tbody td { padding: 8px; border: 1px solid #d9dde6; vertical-align: top; }
+  tbody tr:nth-child(even) { background: #f6f8fc; }
+  td.id { font-weight: 800; color: #2E4F8F; text-align: center; white-space: nowrap; }
+  td.when { white-space: nowrap; font-weight: 600; color: #b03a00; }
+  .who { color: #1F3864; font-weight: 600; }
+  .office td { background: #e8f0e4; }
+  .office td.id { color: #4a7a2a; }
+
+  /* 拍板 */
+  .ask { background: #fdecea; border: 1px solid #e6a89f; border-radius: 6px; padding: 6px 4px; }
+  .ask li { margin: 9px 14px; font-size: 14.5px; }
+  .ask b { color: #b1241a; }
+  .tbc { background: #ffe08a; color: #6b4e00; font-weight: 700;
+    padding: 1px 6px; border-radius: 3px; font-size: 12.5px; }
+
+  .foot { font-size: 12px; color: #888; text-align: center; padding: 18px; border-top: 1px solid #eee; }
+  @media print { body { background: #fff; padding: 0; } .page { box-shadow: none; } }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <div class="hd">
+    <h1><span class="proj">信義364</span> 都更權變｜線上選屋執行計畫</h1>
+    <div class="meta">
+      內部報告　｜　製表：開發部 莊穎霖 Calvin　｜　日期：<b>2026/06/08（一）</b>　｜　目標完成日：<b>2026/07/07（二）選屋定讞</b>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <h2>一、戰情總覽</h2>
+    <div class="war">
+      <div class="card"><div class="num">29</div><div class="lbl">執行天數<br>(6/08→7/07)</div></div>
+      <div class="card"><div class="num">3</div><div class="lbl">預計選屋輪次<br>(多輪收斂)</div></div>
+      <div class="card"><div class="num">53–54</div><div class="lbl">選配單位<br>(合併後)</div></div>
+      <div class="card"><div class="num">4</div><div class="lbl">辦公室面對面日<br>(每週三)</div></div>
+    </div>
+
+    <div class="note">
+      <b>核心做法：</b>選屋不是「收表一次抽完」，而是<b>跑 3 輪密封選屋</b>——住戶私下填前 3 志願（個人保密），
+      每輪後只公布<b>匿名需求熱度表</b>（哪幾戶被搶），住戶看到熱度自願避開塞車戶，逐輪收斂，最後一輪公開抽籤定讞。
+      靜態模型已證實：單輪一次到位必然塞車（三志願全落空率 51–79%），故必須多輪。<br>
+      <b>時程判斷：</b>29 天跑 3 輪「緊但可行」，每輪約 4–5 天。關鍵是<b>準備週必須在 6/14 前完全就緒</b>，否則後段全被擠掉。
+    </div>
+
+    <!-- 第0週 -->
+    <div class="phase">第 0 週｜準備：規則定讞＋表單上線<span class="when">6/08 一 – 6/14 日</span></div>
+    <table>
+      <thead><tr><th style="width:48px">編號</th><th>任務（白話）</th><th style="width:150px">誰負責</th><th style="width:96px">何時完成</th><th style="width:210px">完成的樣子</th></tr></thead>
+      <tbody>
+        <tr><td class="id">T1</td><td>把選屋規則寫成一頁白話＋FAQ（C值=權值、110%／超額9折、最多補一戶、車位不計限、110%內優先＋公開抽籤）</td><td class="who">穎霖擬／主管核示</td><td class="when">6/10（三）前</td><td>主管核章版規則一頁，可發給住戶</td></tr>
+        <tr><td class="id">T2</td><td>跑「多輪收斂模擬」：補上住戶看到熱度後退讓的行為</td><td class="who">穎霖</td><td class="when">6/12（五）</td><td>算出要跑幾輪、哪幾戶會恆塞車</td></tr>
+        <tr><td class="id">T3</td><td>建表單 v1+v2：個人 token、自動帶出可選戶、即時試算補退現金、預留熱度欄</td><td class="who">穎霖／<span class="tbc">表單製作人待確認</span></td><td class="when">6/13（六）</td><td>測試帳號可從手機開、填、送出</td></tr>
+        <tr><td class="id">T4</td><td>造冊：53／54 選配單位 × 專屬 token × LINE 通知名單</td><td class="who">穎霖</td><td class="when">6/13（六）</td><td>每個選配單位一組 token，對得上人</td></tr>
+        <tr class="office"><td class="id">★</td><td>6/10 週三辦公室：預告選屋流程、收住戶疑問</td><td class="who">穎霖</td><td class="when">6/10（三）</td><td>當面說明，記下要補的 FAQ</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 第1週 -->
+    <div class="phase">第 1 週｜第 1 輪選屋<span class="when">6/15 一 – 6/21 日</span></div>
+    <table>
+      <thead><tr><th style="width:48px">編號</th><th>任務（白話）</th><th style="width:150px">誰負責</th><th style="width:96px">何時完成</th><th style="width:210px">完成的樣子</th></tr></thead>
+      <tbody>
+        <tr><td class="id">T6</td><td>表單上線＋LINE 推播「開始填志願」</td><td class="who">穎霖</td><td class="when">6/15（一）</td><td>全戶收到專屬連結</td></tr>
+        <tr><td class="id">T7</td><td>第 1 輪收前 3 志願截止（未填者電話追）</td><td class="who">住戶／穎霖催填</td><td class="when">6/18（四）晚</td><td>回填率掌握，名單清楚</td></tr>
+        <tr><td class="id">T8</td><td>引擎跑配對＋出匿名需求熱度表</td><td class="who">穎霖</td><td class="when">6/19（五）</td><td>哪幾戶 🔴熱／🔵中／🟢冷 出爐</td></tr>
+        <tr><td class="id">T9</td><td>推播熱度＋第 1 輪結果說明</td><td class="who">穎霖</td><td class="when">6/19–6/20</td><td>住戶知道自己搶的戶多熱</td></tr>
+        <tr class="office"><td class="id">★</td><td>6/17 週三辦公室：替不會用網路的住戶當場填</td><td class="who">穎霖</td><td class="when">6/17（三）</td><td>現場協助填完</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 第2週 -->
+    <div class="phase">第 2 週｜第 2 輪收斂<span class="when">6/22 一 – 6/28 日</span></div>
+    <table>
+      <thead><tr><th style="width:48px">編號</th><th>任務（白話）</th><th style="width:150px">誰負責</th><th style="width:96px">何時完成</th><th style="width:210px">完成的樣子</th></tr></thead>
+      <tbody>
+        <tr><td class="id">T10</td><td>第 2 輪開填（住戶看熱度自願改志願）</td><td class="who">住戶／穎霖</td><td class="when">6/22（一）開</td><td>表單帶出第 1 輪熱度</td></tr>
+        <tr><td class="id">T11</td><td>第 2 輪截止</td><td class="who">住戶</td><td class="when">6/25（四）晚</td><td>—</td></tr>
+        <tr><td class="id">T12</td><td>引擎跑＋出新熱度</td><td class="who">穎霖</td><td class="when">6/26（五）</td><td>新熱度表</td></tr>
+        <tr><td class="id">T13</td><td>推播＋查核收斂度（對比 T2 預測）</td><td class="who">穎霖</td><td class="when">6/26–6/27</td><td>三志願落空率降到多少</td></tr>
+        <tr class="office"><td class="id">★</td><td>6/24 週三辦公室：面對面協助＋安撫塞車戶</td><td class="who">穎霖</td><td class="when">6/24（三）</td><td>塞車戶有被照顧到</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 第3週 -->
+    <div class="phase">第 3 週｜第 3 輪＋定讞前演練<span class="when">6/29 一 – 7/05 日</span></div>
+    <table>
+      <thead><tr><th style="width:48px">編號</th><th>任務（白話）</th><th style="width:150px">誰負責</th><th style="width:96px">何時完成</th><th style="width:210px">完成的樣子</th></tr></thead>
+      <tbody>
+        <tr><td class="id">T14</td><td>第 3 輪（若 T13 未收斂才跑）開填→截止</td><td class="who">住戶／穎霖</td><td class="when">6/29 開<br>7/02（四）止</td><td>落空率壓到目標內</td></tr>
+        <tr><td class="id">T15</td><td>收斂確認→鎖定候選配位</td><td class="who">穎霖</td><td class="when">7/03（五）</td><td>候選配位表定稿</td></tr>
+        <tr><td class="id">T16</td><td>抽籤規則與見證人安排定案</td><td class="who">穎霖／<span class="tbc">見證人待確認</span></td><td class="when">7/03（五）</td><td>抽籤辦法＋見證人到場確認</td></tr>
+        <tr><td class="id">T17</td><td>正式抽籤預演（dry-run 配位引擎）</td><td class="who">穎霖</td><td class="when">7/04（六）</td><td>跑通、無錯位、報告模板就緒</td></tr>
+        <tr class="office"><td class="id">★</td><td>7/01 週三辦公室：最後一次面對面確認流程</td><td class="who">穎霖</td><td class="when">7/01（三）</td><td>住戶都懂最終流程</td></tr>
+      </tbody>
+    </table>
+
+    <!-- 選屋日 -->
+    <div class="phase">選屋日｜正式定讞<span class="when">7/07 二</span></div>
+    <table>
+      <thead><tr><th style="width:48px">編號</th><th>任務（白話）</th><th style="width:150px">誰負責</th><th style="width:96px">何時完成</th><th style="width:210px">完成的樣子</th></tr></thead>
+      <tbody>
+        <tr><td class="id">T18</td><td>正式公開抽籤定讞（110%內優先＋抽籤，見證人在場、亂數種子公開可驗）</td><td class="who">穎霖／見證人</td><td class="when">7/07（二）</td><td>每戶歸屬定案</td></tr>
+        <tr><td class="id">T19</td><td>出個人配位報告（戶別／坪數／補退現金／車位）</td><td class="who">穎霖</td><td class="when">7/07 當天–隔日</td><td>每戶一份 PDF</td></tr>
+      </tbody>
+    </table>
+
+    <h2>二、三個須先拍板的事（卡到時程，等不得）</h2>
+    <ol class="ask">
+      <li><b>表單由誰做？</b>穎霖自建（GitHub Pages＋Google Sheet）或委外？這決定 T3 能否 6/13 完成——是整條時程的源頭。<span class="tbc">待主管確認</span></li>
+      <li><b>見證人（T16）：</b>抽籤要不要請地政士／律師到場？要的話現在就得約。<span class="tbc">待確認</span></li>
+      <li><b>規則核示時點（T1）：</b>主管 6/10 前能核章嗎？沒核章後段全部不能動。<span class="tbc">待主管確認</span></li>
+    </ol>
+
+  </div>
+
+  <div class="foot">寶舖建設集團 開發部　｜　信義364 線上選屋執行計畫　｜　內部報告</div>
+
+</div>
+</body>
+</html>
